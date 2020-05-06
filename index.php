@@ -1,6 +1,6 @@
 <?php
-$objet = 'text'; //déclaration variable
-$message = 'text2'; //variable objet et message
+$object = 'Bonjour, '; //déclaration variable
+$message = 'en route pour une aventure'; //variable object et message
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
@@ -9,9 +9,13 @@ $message = 'text2'; //variable objet et message
   <title>ex1 partie1 php</title>
 </head>
 <body>
-  <?php
-  echo 'bonjour, '; //initialiser la valeur texte
-  echo 'en route pour une aventure';
-  ?>
+  <p>
+    <?php
+    echo $object; //affiche la variable $object / $message
+    echo $message;
+    ?>
+  </p>
+  <p><?php echo $object . $message; ?></p> <!--ou-->
+  <p><?= $object . $message; ?></p> <!--version raccourci-->
 </body>
 </html>
